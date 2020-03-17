@@ -7,7 +7,7 @@ namespace prohect
 
 2. PRINTING
 
-echo " hello \"hi\" there" . "append" , "doesnt append only print";                               //preferred
+echo " hello \"hi\" there" . "append" , "doesnt append only print";             //preferred
 print_r(" hello \"hi\" there" . "append");
 
 3. VARIABLES
@@ -24,16 +24,16 @@ return $a.$b;
 }
 $x=test(3,"HI");
 $a=10;
-$v= &$a;                                                                                          //Call by reference
+$v= &$a;                                                                         //Call by reference
 
 5. STRING / STL
 
-getttype($a)                                                                                      //prints datatype
-var_dump($a)                                                                                      //prints datatype , size , a itself
+getttype($a)                                                                     //prints datatype
+var_dump($a)                                                                     //prints datatype , size , a itself
 
 echo strrev("kapeeD") , strtolower("SOON") , strtoupper("soon") , str_repeat("There\n",3) , substr_count($a,"really");
-echo abs(-10.99) , round(1.5) , ceil(1.32);                                                       //Prints 10.99 , 2 , 2
-echo getrandmax() , rand() , rand(1,52);                                                          //Prints max , random value , random btw 1 and 52
+echo abs(-10.99) , round(1.5) , ceil(1.32);                                      //Prints 10.99 , 2 , 2
+echo getrandmax() , rand() , rand(1,52);                                         //Prints max , random value , random btw 1 and 52
 
 str_pad(string,length,pad_string,pad_type)
 $a = 29;
@@ -47,16 +47,16 @@ $a=array(1,"string",2.2);  or  $a=[1,"string",2.2];
 echo count($a);
 foreach($b as $a)
     echo "$b";
-echo implode(",",$array);                                                                         //Converts array into string glued by comma
+echo implode(",",$array);                                                         //Converts array into string glued by comma
 array_push($a,1,2);     (end)        array_unshift($a,1,2);     (front)
 array_pop($a);          (end)        arra_shift($a)             (front)
 
 7. MAP
 
 $a=array("0"=>1,"1"=>2);  or  $a=["0"=>1,"1"=>2];
-$newa=array_keys($a);                                                                             //Getting all the keys
-unset($a["0"]);                                                                                   //Removes the 1 pair permanently
-$append=$a + $newa;                                                                               //Adds unique keys from newa directly to a
+$newa=array_keys($a);                                                             //Getting all the keys
+unset($a["0"]);                                                                   //Removes the 1 pair permanently
+$append=$a + $newa;                                                               //Adds unique keys from newa directly to a
 
 8. FORM HANDLING
 
