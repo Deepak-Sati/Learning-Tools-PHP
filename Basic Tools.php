@@ -1,17 +1,24 @@
+1. IMPORTING
+
 <?php include 'work.php'; ?>
 <?php
 namespace prohect
 ?>
+
+2. PRINTING
+
 echo " hello \"hi\" there" . "append" , "doesnt append only print";                               //preferred
 print_r(" hello \"hi\" there" . "append");
 
-VARIABLES
+3. VARIABLES
+
 $a=10;
 $variable="hi";
 **  = power
 if() elseif($x>10)
 
-FUNCTION
+4. FUNCTIONS
+
 function test($a , $b="default"){
 return $a.$b;
 }
@@ -19,9 +26,10 @@ $x=test(3,"HI");
 $a=10;
 $v= &$a;                                                                                          //Call by reference
 
-STL
-getttype($a)         prints datatype
-var_dump($a)         prints datatype , size , a itself
+5. STRING / STL
+
+getttype($a)                                                                                      //prints datatype
+var_dump($a)                                                                                      //prints datatype , size , a itself
 
 echo strrev("kapeeD") , strtolower("SOON") , strtoupper("soon") , str_repeat("There\n",3) , substr_count($a,"really");
 echo abs(-10.99) , round(1.5) , ceil(1.32);                                                       //Prints 10.99 , 2 , 2
@@ -33,7 +41,8 @@ $b = "You did it!";
 $d = "*~*";
 echo str_pad($b, $a, $d, STR_PAD_BOTH);
 
-ARRAY
+6.ARRAY
+
 $a=array(1,"string",2.2);  or  $a=[1,"string",2.2];
 echo count($a);
 foreach($b as $a)
@@ -42,13 +51,15 @@ echo implode(",",$array);                                                       
 array_push($a,1,2);     (end)        array_unshift($a,1,2);     (front)
 array_pop($a);          (end)        arra_shift($a)             (front)
 
-MAP
+7. MAP
+
 $a=array("0"=>1,"1"=>2);  or  $a=["0"=>1,"1"=>2];
 $newa=array_keys($a);                                                                             //Getting all the keys
 unset($a["0"]);                                                                                   //Removes the 1 pair permanently
 $append=$a + $newa;                                                                               //Adds unique keys from newa directly to a
 
-FORM HANDLING
+8. FORM HANDLING
+
 $_GET       ( <form method="get"></form>               <p>Value is = <?=$_GET['name'];?> </p>         )
 $_POST      ( <form method="post"></form> )            <p>Value is = <?=$_POST['name'];?> </p>        )
 $_REQUEST   ( <form method="request"></form> )         when both get and post form are used within same html
@@ -64,7 +75,8 @@ $    =  ends with
 +    =  Atleast once
 *    =  As many times
 
-DEMO CONNECT PHP-MYSQL
+9. DEMO CONNECT PHP-MYSQL
+
 <?php
 $servername = "localhost";
 $username = "username";
